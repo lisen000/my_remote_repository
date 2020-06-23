@@ -17,6 +17,7 @@ class Single{
 	//提供一个静态的共有方法，当使用到该方法时，才去instance
 	//即懒汉式
 	public static Single getInstance() {
+		//双层校验锁，既保证线程安全，有提高了访问效率
 		if(singleton == null) {
 		synchronized (Single.class) {
 			if(singleton==null) {		
