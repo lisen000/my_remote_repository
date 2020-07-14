@@ -18,7 +18,7 @@ class Singleton {
 	}
 	//2、私有静态成员并直接初始化
 	private final static Singleton instance = new Singleton();
-	//3、提供一个对外访问的公共公共方法，返回对象实例
+	//3、提供一个对外访问的公共方法，返回对象实例
 	public static Singleton getInstance() {
 		return instance;
 	}
